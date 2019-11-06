@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FaceCore</string>
+    <string name="title_activity_face">FaceActivity</string>
+</resources>

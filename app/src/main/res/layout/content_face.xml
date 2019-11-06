@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".FaceActivity"
+    tools:showIn="@layout/activity_face">
+
+    <com.thomas.face.core.widget.FaceView
+        android:id="@+id/face_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        app:fv_animTime="1000"
+        app:fv_borderColor="@android:color/white"
+        app:fv_cornerDisplayType="center"
+        app:fv_isOnlyDecodeScanBoxArea="false"
+        app:fv_isShowTipTextAsSingleLine="true"
+        app:fv_isTipTextBelowRect="true"
+        app:fv_rectWidth="200dp"
+        app:fv_scanLineColor="@color/colorAccent"
+        app:fv_scanLineSize="0.5dp"
+        app:fv_tipBackgroundColor="@color/colorAccent"
+        app:fv_tipText="888888"
+        app:fv_tipTextColor="@color/colorAccent"
+        app:fv_tipTextMargin="8dp"
+        app:fv_tipTextSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/face_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
